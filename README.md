@@ -1,2 +1,2 @@
-# death_star_lamp
-Code to support an voice-enabled Death Star lamp. Project documented on Instructables.
+Alexa-Enabled Death Star Lamp
+Code to support a Star Wars themed voice activated lamp. Project and build process documented in detail on Instructables.
