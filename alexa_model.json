@@ -1,0 +1,134 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "death star",
+            "intents": [
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SetupIntent",
+                    "slots": [
+                        {
+                            "name": "Setup",
+                            "type": "SETUP"
+                        }
+                    ],
+                    "samples": [
+                        "to {Setup}",
+                        "to {Setup} my death star",
+                        "to {Setup} my configuration",
+                        "initiate {Setup}"
+                    ]
+                },
+                {
+                    "name": "StateIntent",
+                    "slots": [
+                        {
+                            "name": "State",
+                            "type": "STATES"
+                        }
+                    ],
+                    "samples": [
+                        "turn {State}",
+                        "to turn {State}",
+                        "switch {State}",
+                        "turn {State} death star"
+                    ]
+                },
+                {
+                    "name": "GlowIntent",
+                    "slots": [
+                        {
+                            "name": "Glow",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "set to {Glow}",
+                        "set glow to {Glow}",
+                        "set glow to level {Glow}"
+                    ]
+                },
+                {
+                    "name": "EffectsIntent",
+                    "slots": [
+                        {
+                            "name": "Effect",
+                            "type": "EFFECTS"
+                        }
+                    ],
+                    "samples": [
+                        "for {Effect}",
+                        "to give {Effect}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "EFFECTS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "full effects"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SETUP",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "set up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "setup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "configure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "device ID"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "STATES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
